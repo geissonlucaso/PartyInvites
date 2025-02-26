@@ -1,0 +1,129 @@
+# Arquivos gerados pelo Build
+bin/
+obj/
+out/
+!**/bin/.gitkeep
+!**/obj/.gitkeep
+
+# Logs
+*.log
+logs/
+*.nlog
+*.tlog
+
+# Arquivos de depuração e profiling
+*.pdb
+*.vsp
+*.vspx
+*.log
+*.trace
+
+# Configuração do Rider e Visual Studio Code
+.idea/
+.vscode/
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.cache
+*.bak
+*.swp
+*.swo
+*.sln.docstates
+
+# Configurações do Visual Studio
+.vs/
+*.user
+*.suo
+*.ntvs*
+*.njsproj
+*.psscc
+*.sln.cache
+*.sln.metaproj
+*.sln.metaproj.tmp
+*.csproj.user
+*.csproj.vspscc
+
+# Dependências do NuGet
+*.nupkg
+packages/
+project.lock.json
+project.assets.json
+global.json
+.nuget/
+.nuget/packages/
+
+# Arquivos gerados pelo EF Core Migrations
+Migrations/
+
+# Arquivos do Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Arquivos do Linux e macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Arquivos de credenciais
+secrets.json
+appsettings.Development.json
+appsettings.local.json
+
+# Arquivos de cache do Git
+*.rsuser
+*.sdf
+*.sln.docstates
+
+# Certificados de desenvolvimento
+localhost.pfx
+*.pfx
+
+# Docker e Kubernetes
+Dockerfile
+.dockerignore
+**/docker-compose*.yml
+**/k8s/*.yaml
+**/k8s/*.yml
+
+# Node.js (se usar npm ou frontend com React/Vue/Angular)
+node_modules/
+npm-debug.log
+yarn.lock
+pnpm-lock.yaml
+
+# Arquivos de publicação
+publish/
+dist/
+
+# Arquivos temporários de debug e profiling
+*.swp
+*.swo
+*.esproj
+*.bak
+*.ilk
+*.obj
+*.tlb
+*.tlh
+*.tmp
+*.tmp_proj
+*.tmp_proj*
+
+# Certificados SSL
+*.pfx
+*.p12
+
+# Configuração do Resharper/Rider
+*.DotSettings
+*.DotSettings.user
+resharper.xml
+.idea/
+**/Rider*.*
+
+# Arquivos de integração do Azure
+.azure/
+**/azure-pipelines.yml
+**/azure-pipelines.yml
