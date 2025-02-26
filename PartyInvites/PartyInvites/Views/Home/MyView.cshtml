@@ -1,0 +1,20 @@
+﻿@* Ignora o uso do template padrão do Razor para esta página. *@
+@{
+    Layout = null;
+}
+
+@* Layout completo da página sem utilizar o Razor. *@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Index</title>
+    </head>
+
+    <body>
+        <div>
+            @* Dynamic Output. *@
+            @ViewBag.Greeting World (from the view)
+        </div>
+    </body>
+</html>

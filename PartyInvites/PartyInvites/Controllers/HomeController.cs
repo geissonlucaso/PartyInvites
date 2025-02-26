@@ -1,32 +1,22 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using PartyInvites.Models;
 
 namespace PartyInvites.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        //public string Index()
+        //{
+        //    return "Hello World";
+        //}
 
-        public HomeController(ILogger<HomeController> logger)
+        public ViewResult Index()
         {
-            _logger = logger;
-        }
+            int hour = DateTime.Now.Hour;
 
-        public IActionResult Index()
-        {
-            return View();
-        }
+            //Dynamic Output.
+            ViewBag.Greeting = hour < 12 ? "Good Morning" : "Good Afternoon";
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View("MyView");
         }
     }
 }
