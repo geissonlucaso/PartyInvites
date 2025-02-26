@@ -9,12 +9,18 @@
     <head>
         <meta name="viewport" content="width=device-width" />
         <title>Index</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
     </head>
 
     <body>
-        <div>
+        <div class="text-center">
             @* Dynamic Output. *@
-            @ViewBag.Greeting World (from the view)
+            <h2>@ViewBag.Greeting World (from the view)</h2>
+            <h3>We're going to have an exciting party!</h3>
+            <h4>And you are invited</h4>
+
+            @* Link para RsvpForm page *@
+            <a class="btn btn-primary" asp-action="RsvpForm">RSVP Now</a>
         </div>
     </body>
 </html>
